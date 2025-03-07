@@ -1,0 +1,110 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #3a3a56);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Estilos del menú */
+  nav {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 15px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Lista del menú */
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Estilos de los enlaces */
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  /* Efecto hover */
+  nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: #ffcc00;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    nav {
+      width: 90%;
+      text-align: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  /* Estilos para el contenedor de idiomas */
+  .language-selector {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Estilos para cada item de idioma */
+  .language-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+  }
+  
+  /* Efecto hover para los items de idioma */
+  .language-item:hover {
+    background: rgba(255, 255, 255, 0.4);
+    color: #ffcc00;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Responsive: Ajuste en pantallas pequeñas */
+  @media (max-width: 600px) {
+    .language-selector {
+      top: 10px;
+      right: 10px;
+      flex-direction: column;
+      gap: 5px;
+    }
+  
+    .language-item {
+      padding: 5px 10px;
+    }
+  }

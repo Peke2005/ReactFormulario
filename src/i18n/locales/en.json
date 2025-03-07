@@ -1,0 +1,12 @@
+{
+    "inicio": {
+      "titulo": "Welcome to the Survey",
+      "descripcion": "Answer the questions to complete your evaluation.",
+      "comenzar": "Start"
+    },
+    "formulario": {
+      "siguiente": "Next",
+      "finalizar": "Finish"
+    }
+  }
+  

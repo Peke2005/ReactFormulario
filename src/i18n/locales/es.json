@@ -1,0 +1,12 @@
+{
+    "inicio": {
+      "titulo": "Bienvenido al Cuestionario",
+      "descripcion": "Responde las preguntas para completar tu evaluación.",
+      "comenzar": "Comenzar"
+    },
+    "formulario": {
+      "siguiente": "Siguiente",
+      "finalizar": "Finalizar"
+    }
+  }
+  
