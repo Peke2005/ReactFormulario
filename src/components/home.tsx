@@ -11,7 +11,7 @@ function home() {
       <p className="mt-2">{t("inicio.descripcion")}</p>
       <button
         onClick={() => navigate("/formulario")}
-        className="mt-4 bg-blue-500 text-white py-2 px-4 rounded"
+        className="mt-4 bg-blue-500 text-black py-2 px-4 rounded"
       >
         {t("inicio.comenzar")}
       </button>

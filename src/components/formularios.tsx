@@ -44,7 +44,7 @@ function Formulario() {
         <button
           type="button"
           onClick={handleNext}
-          className="mt-4 bg-green-500 text-white py-2 px-4 rounded"
+          className="mt-4 bg-green-500 text-black py-2 px-4 rounded"
         >
           {index < questionsData.length - 1 ? t("formulario.siguiente") : t("formulario.finalizar")}
         </button>
