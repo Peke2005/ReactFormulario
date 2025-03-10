@@ -32,7 +32,7 @@ function Formulario() {
           <div key={pregunta.id} className="mb-4">
             <label className="block font-medium">{t(pregunta.pregunta)}</label>
             <input
-              type="text"
+              type={pregunta.tipo}
               name={pregunta.id}
               value={respuestas[pregunta.id] || ""}
               onChange={handleChange}
