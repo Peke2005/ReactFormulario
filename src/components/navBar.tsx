@@ -6,13 +6,13 @@ function App() {
       <nav>
         <ul>
           <li>
-            <a href="http://localhost:5173/resumen">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
-            <a href="">Formularios</a>
+            <a href="/formulario">Formularios</a>
           </li>
           <li>
-            <a href="">Resultados</a>
+            <a href="/resumen">Resultados</a>
           </li>
         </ul>
       </nav>
