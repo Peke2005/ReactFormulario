@@ -1,12 +1,37 @@
 {
-    "inicio": {
-      "titulo": "Welcome to the Survey",
-      "descripcion": "Answer the questions to complete your evaluation.",
-      "comenzar": "Start"
-    },
-    "formulario": {
-      "siguiente": "Next",
-      "finalizar": "Finish"
-    }
+  "inicio": {
+    "titulo": "Welcome to the Survey",
+    "descripcion": "Answer the questions to complete your evaluation.",
+    "comenzar": "Start"
+  },
+  "formulario": {
+    "titulo": "User Form",
+    "siguiente": "Next",
+    "finalizar": "Finish",
+    "preguntas": [
+      {
+        "id": "nombre",
+        "tipo": "text",
+        "pregunta": "¿Cuál es tu nombre?",
+        "respuesta": "",
+        "restricciones": {
+          "min": 3,
+          "max": 50
+        }
+      },
+      {
+        "id": "fecha_nacimiento",
+        "tipo": "text",
+        "pregunta": "¿Cuál es tu fecha de nacimiento?",
+        "respuesta": "",
+        "restricciones": {
+          "min": 1,
+          "max": 10
+        },
+        "validacion": {
+          "min_edad": 17
+        }
+      }
+    ]
   }
-  
+}

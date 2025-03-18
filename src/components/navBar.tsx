@@ -1,27 +1,50 @@
+import React from "react";
+import { Link } from "react-router-dom"; // Para enlaces internos
+import { useTranslation } from "react-i18next";
 import "../style/navBar.css";
 
-function App() {
+const NavBar: React.FC = () => {
+  const { i18n } = useTranslation();
+
+  // Funciones para cambiar el idioma
+  const changeToSpanish = () => i18n.changeLanguage("es");
+  const changeToEnglish = () => i18n.changeLanguage("en");
+
   return (
     <>
       <nav>
         <ul>
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/formulario">Formularios</a>
+            <Link to="/formulario">Formularios</Link>
           </li>
           <li>
-            <a href="/resumen">Resultados</a>
+            <Link to="/resumen">Resultados</Link>
           </li>
         </ul>
       </nav>
       <ul className="language-selector">
-        <li className="language-item">Español</li>
-        <li className="language-item">Inglés</li>
+        <li className="language-item">
+          <button
+            onClick={changeToSpanish}
+            className="language-button"
+          >
+            Español
+          </button>
+        </li>
+        <li className="language-item">
+          <button
+            onClick={changeToEnglish}
+            className="language-button"
+          >
+            Inglés
+          </button>
+        </li>
       </ul>
     </>
   );
-}
+};
 
-export default App;
+export default NavBar;

@@ -179,12 +179,14 @@ function Formulario() {
                 </div>
               );
             case "textarea":
+            
               return (
                 <div key={pregunta.id} className="mb-4">
                   <label className="block font-medium">
                     {t(pregunta.pregunta)}
                   </label>
                   <textarea
+                  
                     name={pregunta.id}
                     value={(respuestas[pregunta.id] as string) || ""}
                     onChange={handleChange}
@@ -192,6 +194,7 @@ function Formulario() {
                     required
                     rows={4}
                   />
+                  
                 </div>
               );
             default:
