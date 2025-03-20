@@ -222,11 +222,11 @@ function Formulario() {
                     }`}
                     required
                   >
-                    <option value="" disabled>
+                    <option value="" className="bg-black" disabled>
                       {t("formulario.selecciona")}
                     </option>
                     {pregunta.opciones?.map((opcion, idx) => (
-                      <option key={idx} value={opcion}>
+                      <option key={idx} value={opcion} className="bg-black">
                         {t(opcion)}
                       </option>
                     ))}
