@@ -76,21 +76,18 @@ function Formulario() {
     // Validación básica de campo requerido
     if (pregunta.tipo === "check") {
       if (!Array.isArray(respuesta) || respuesta.length === 0)
-        return "formulario.error_selecciona_una_opcion";
+        return "Selecciona al menos una opción";
       if (
         validacion.max_seleccionados &&
         respuesta.length > validacion.max_seleccionados
       ) {
-        return {
-          key: "formulario.error_max_seleccionados",
-          values: { max: validacion.max_seleccionados },
-        };
+        return `Máximo ${validacion.max_seleccionados} opciones permitidas`;
       }
     } else if (
       !respuesta ||
       (typeof respuesta === "string" && respuesta.trim() === "")
     ) {
-      return "formulario.error_campo_requerido";
+      return "Este campo es requerido";
     }
 
     // Validación de longitud
@@ -99,16 +96,10 @@ function Formulario() {
       (pregunta.tipo === "text" || pregunta.tipo === "textarea")
     ) {
       if (restricciones.min && respuesta.length < restricciones.min) {
-        return {
-          key: "formulario.error_min_caracteres",
-          values: { min: restricciones.min },
-        };
+        return `Mínimo ${restricciones.min} caracteres`;
       }
       if (restricciones.max && respuesta.length > restricciones.max) {
-        return {
-          key: "formulario.error_max_caracteres",
-          values: { max: restricciones.max },
-        };
+        return `Máximo ${restricciones.max} caracteres`;
       }
     }
 
@@ -129,23 +120,17 @@ function Formulario() {
         age--;
       }
       if (age < validacion.min_edad) {
-        return {
-          key: "formulario.error_min_edad",
-          values: { min_edad: validacion.min_edad },
-        };
+        return `Debes tener al menos ${validacion.min_edad} años`;
       }
     }
 
     if (pregunta.id === "email" && typeof respuesta === "string") {
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (validacion.formato === "email" && !emailRegex.test(respuesta)) {
-        return "formulario.error_email_invalido";
+        return "Formato de email inválido";
       }
       if (validacion.dominio && !respuesta.endsWith(`@${validacion.dominio}`)) {
-        return {
-          key: "formulario.error_dominio",
-          values: { dominio: validacion.dominio },
-        };
+        return `El email debe ser del dominio ${validacion.dominio}`;
       }
     }
 
@@ -200,9 +185,6 @@ function Formulario() {
           const respuesta = respuestas[pregunta.id];
           const error = validateField(pregunta, respuesta);
 
-          const errorMessage =
-            typeof error === "string" ? t(error) : error ? t(error.key, error.values) : "";
-
           switch (pregunta.tipo) {
             case "text":
               return (
@@ -221,7 +203,7 @@ function Formulario() {
                     required
                   />
                   {error && (
-                    <span className="text-red-500 text-sm">{errorMessage}</span>
+                    <span className="text-red-500 text-sm">{t(error)}</span>
                   )}
                 </div>
               );
@@ -240,17 +222,17 @@ function Formulario() {
                     }`}
                     required
                   >
-                    <option value="" className="bg-black" disabled>
+                    <option value="" disabled>
                       {t("formulario.selecciona")}
                     </option>
                     {pregunta.opciones?.map((opcion, idx) => (
-                      <option key={idx} value={opcion} className="bg-black">
+                      <option key={idx} value={opcion}>
                         {t(opcion)}
                       </option>
                     ))}
                   </select>
                   {error && (
-                    <span className="text-red-500 text-sm">{errorMessage}</span>
+                    <span className="text-red-500 text-sm">{t(error)}</span>
                   )}
                 </div>
               );
@@ -276,7 +258,7 @@ function Formulario() {
                     </div>
                   ))}
                   {error && (
-                    <span className="text-red-500 text-sm">{errorMessage}</span>
+                    <span className="text-red-500 text-sm">{t(error)}</span>
                   )}
                 </div>
               );
@@ -297,7 +279,7 @@ function Formulario() {
                     rows={4}
                   />
                   {error && (
-                    <span className="text-red-500 text-sm">{errorMessage}</span>
+                    <span className="text-red-500 text-sm">{t(error)}</span>
                   )}
                 </div>
               );
