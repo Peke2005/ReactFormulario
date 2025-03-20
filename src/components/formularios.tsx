@@ -178,7 +178,7 @@ function Formulario() {
   };
 
   return (
-    <div className="p-6">
+    <div className="p-6 mt-[20%]">
       <h2 className="text-xl font-semibold">{t(formulario.titulo)}</h2>
       <form className="mt-4" onSubmit={(e) => e.preventDefault()}>
         {formulario.preguntas.map((pregunta) => {
