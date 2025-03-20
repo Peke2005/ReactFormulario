@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import "../style/footer.css"; // Asegúrate de crear este archivo para los estilos
 
 function Footer() {
-  const { t } = useTranslation();
+  const {} = useTranslation();
   const [currentTime, setCurrentTime] = useState(new Date());
 
   // Actualiza la hora cada segundo
