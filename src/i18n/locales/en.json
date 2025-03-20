@@ -9,7 +9,15 @@
     "selecciona": "Select an option",
     "anterior": "Previous",
     "siguiente": "Next",
-    "finalizar": "Finish"
+    "finalizar": "Finish",
+    "error_selecciona_una_opcion": "Select at least one option",
+    "error_max_seleccionados": "Maximum {max} options allowed",
+    "error_campo_requerido": "This field is required",
+    "error_min_caracteres": "Minimum {min} characters",
+    "error_max_caracteres": "Maximum {max} characters",
+    "error_min_edad": "You must be at least {min_edad} years old",
+    "error_email_invalido": "Invalid email format",
+    "error_dominio": "Email must be from the {dominio} domain"
   },
   "resumen": {
     "titulo": "Summary of Responses"

@@ -9,7 +9,15 @@
     "selecciona": "Selecciona una opción",
     "anterior": "Anterior",
     "siguiente": "Siguiente",
-    "finalizar": "Finalizar"
+    "finalizar": "Finalizar",
+    "error_selecciona_una_opcion": "Selecciona al menos una opción",
+    "error_max_seleccionados": "Máximo {max} opciones permitidas",
+    "error_campo_requerido": "Este campo es requerido",
+    "error_min_caracteres": "Mínimo {min} caracteres",
+    "error_max_caracteres": "Máximo {max} caracteres",
+    "error_min_edad": "Debes tener al menos {min_edad} años",
+    "error_email_invalido": "Formato de email inválido",
+    "error_dominio": "El email debe ser del dominio {dominio}"
   },
   "resumen": {
     "titulo": "Resumen de Respuestas"
