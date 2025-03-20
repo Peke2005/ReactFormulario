@@ -5,33 +5,68 @@
     "comenzar": "Start"
   },
   "formulario": {
-    "titulo": "User Form",
+    "completaTodos": "Please complete all fields before continuing.",
+    "selecciona": "Select an option",
+    "anterior": "Previous",
     "siguiente": "Next",
-    "finalizar": "Finish",
-    "preguntas": [
-      {
-        "id": "nombre",
-        "tipo": "text",
-        "pregunta": "¿Cuál es tu nombre?",
-        "respuesta": "",
-        "restricciones": {
-          "min": 3,
-          "max": 50
-        }
-      },
-      {
-        "id": "fecha_nacimiento",
-        "tipo": "text",
-        "pregunta": "¿Cuál es tu fecha de nacimiento?",
-        "respuesta": "",
-        "restricciones": {
-          "min": 1,
-          "max": 10
-        },
-        "validacion": {
-          "min_edad": 17
-        }
-      }
-    ]
-  }
+    "finalizar": "Finish"
+  }, "resumen": {
+    "titulo": "Summary of Responses"
+  },
+  "Cuestionario de Datos del Usuario": "User Data Questionnaire",
+  "¿Cuál es tu nombre?": "What is your name?",
+  "¿Cuál es tu fecha de nacimiento?": "What is your date of birth?",
+  "¿Cuál es tu correo electrónico?": "What is your email address?",
+  "¿Cuál es tu sexo?": "What is your gender?",
+  "Masculino": "Male",
+  "Femenino": "Female",
+  "Otro": "Other",
+  "¿Qué prefieres hacer en tu tiempo libre?": "What do you prefer to do in your free time?",
+  "Leer": "Read",
+  "Deportes": "Sports",
+  "Viajar": "Travel",
+  "Cine": "Movies",
+  "Cuestionario de Evaluación Académica": "Academic Evaluation Questionnaire",
+  "¿Qué mejorarías en el curso?": "What would you improve in the course?",
+  "¿Qué tan satisfecho estás con el contenido del curso?": "How satisfied are you with the course content?",
+  "1": "1",
+  "2": "2",
+  "3": "3",
+  "4": "4",
+  "5": "5",
+  "¿Asististe a todas las clases?": "Did you attend all classes?",
+  "sí": "Yes",
+  "no": "No",
+  "¿Cuáles horarios prefieres para las clases? (Selecciona hasta 2 opciones)": "Which class schedules do you prefer? (Select up to 2 options)",
+  "Lunes 9:00 AM - 11:00 AM": "Monday 9:00 AM - 11:00 AM",
+  "Martes 3:00 PM - 5:00 PM": "Tuesday 3:00 PM - 5:00 PM",
+  "Miércoles 10:00 AM - 12:00 PM": "Wednesday 10:00 AM - 12:00 PM",
+  "Jueves 1:00 PM - 3:00 PM": "Thursday 1:00 PM - 3:00 PM",
+  "Viernes 4:00 PM - 6:00 PM": "Friday 4:00 PM - 6:00 PM",
+  "Encuesta de Preferencias en Tecnología": "Technology Preferences Survey",
+  "¿Qué tecnología te gustaría aprender en el futuro?": "What technology would you like to learn in the future?",
+  "¿Qué sistema operativo prefieres usar?": "Which operating system do you prefer to use?",
+  "Windows": "Windows",
+  "Linux": "Linux",
+  "MacOS": "MacOS",
+  "¿Qué dispositivos usas regularmente? (Selecciona hasta 2 opciones)": "Which devices do you use regularly? (Select up to 2 options)",
+  "smartphone": "Smartphone",
+  "laptop": "Laptop",
+  "tablet": "Tablet",
+  "smartwatch": "Smartwatch",
+  "¿Cuántas horas a la semana dedicas a aprender sobre tecnología?": "How many hours a week do you spend learning about technology?",
+  "6": "6",
+  "7": "7",
+  "8": "8",
+  "9": "9",
+  "10": "10",
+  "Encuesta de Preferencias de Cine": "Movie Preferences Survey",
+  "¿Qué género de películas prefieres?": "What movie genres do you prefer?",
+  "¿Cuál es tu película favorita?": "What is your favorite movie?",
+  "Inception": "Inception",
+  "The Matrix": "The Matrix",
+  "Avengers": "Avengers",
+  "Titanic": "Titanic",
+  "¿Has visto alguna de las siguientes películas?": "Have you seen any of the following movies?",
+  "¿Con qué frecuencia ves películas?": "How often do you watch movies?"
 }

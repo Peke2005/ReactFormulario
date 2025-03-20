@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Para enlaces internos
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "../style/navBar.css";
 
@@ -7,8 +7,14 @@ const NavBar: React.FC = () => {
   const { i18n } = useTranslation();
 
   // Funciones para cambiar el idioma
-  const changeToSpanish = () => i18n.changeLanguage("es");
-  const changeToEnglish = () => i18n.changeLanguage("en");
+  const changeToSpanish = () => {
+    i18n.changeLanguage("es");
+    localStorage.setItem("idioma", "es"); // Guarda "es" en lugar de "español"
+  };
+  const changeToEnglish = () => {
+    i18n.changeLanguage("en");
+    localStorage.setItem("idioma", "en"); // Guarda "en" en lugar de "ingles"
+  };
 
   return (
     <>
@@ -27,18 +33,12 @@ const NavBar: React.FC = () => {
       </nav>
       <ul className="language-selector">
         <li className="language-item">
-          <button
-            onClick={changeToSpanish}
-            className="language-button"
-          >
+          <button onClick={changeToSpanish} className="language-button">
             Español
           </button>
         </li>
         <li className="language-item">
-          <button
-            onClick={changeToEnglish}
-            className="language-button"
-          >
+          <button onClick={changeToEnglish} className="language-button">
             Inglés
           </button>
         </li>

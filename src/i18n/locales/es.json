@@ -1,12 +1,72 @@
 {
-    "inicio": {
-      "titulo": "Bienvenido al Cuestionario",
-      "descripcion": "Responde las preguntas para completar tu evaluación.",
-      "comenzar": "Comenzar"
-    },
-    "formulario": {
-      "siguiente": "Siguiente",
-      "finalizar": "Finalizar"
-    }
-  }
-  
+  "inicio": {
+    "titulo": "Bienvenido a la Encuesta",
+    "descripcion": "Responde las preguntas para completar tu evaluación.",
+    "comenzar": "Comenzar"
+  },
+  "formulario": {
+    "completaTodos": "Por favor, completa todos los campos antes de continuar.",
+    "selecciona": "Selecciona una opción",
+    "anterior": "Anterior",
+    "siguiente": "Siguiente",
+    "finalizar": "Finalizar"
+  }, "resumen": {
+    "titulo": "Resumen de Respuestas"
+  },
+  "Cuestionario de Datos del Usuario": "Cuestionario de Datos del Usuario",
+  "¿Cuál es tu nombre?": "¿Cuál es tu nombre?",
+  "¿Cuál es tu fecha de nacimiento?": "¿Cuál es tu fecha de nacimiento?",
+  "¿Cuál es tu correo electrónico?": "¿Cuál es tu correo electrónico?",
+  "¿Cuál es tu sexo?": "¿Cuál es tu sexo?",
+  "Masculino": "Masculino",
+  "Femenino": "Femenino",
+  "Otro": "Otro",
+  "¿Qué prefieres hacer en tu tiempo libre?": "¿Qué prefieres hacer en tu tiempo libre?",
+  "Leer": "Leer",
+  "Deportes": "Deportes",
+  "Viajar": "Viajar",
+  "Cine": "Cine",
+  "Cuestionario de Evaluación Académica": "Cuestionario de Evaluación Académica",
+  "¿Qué mejorarías en el curso?": "¿Qué mejorarías en el curso?",
+  "¿Qué tan satisfecho estás con el contenido del curso?": "¿Qué tan satisfecho estás con el contenido del curso?",
+  "1": "1",
+  "2": "2",
+  "3": "3",
+  "4": "4",
+  "5": "5",
+  "¿Asististe a todas las clases?": "¿Asististe a todas las clases?",
+  "sí": "sí",
+  "no": "no",
+  "¿Cuáles horarios prefieres para las clases? (Selecciona hasta 2 opciones)": "¿Cuáles horarios prefieres para las clases? (Selecciona hasta 2 opciones)",
+  "Lunes 9:00 AM - 11:00 AM": "Lunes 9:00 AM - 11:00 AM",
+  "Martes 3:00 PM - 5:00 PM": "Martes 3:00 PM - 5:00 PM",
+  "Miércoles 10:00 AM - 12:00 PM": "Miércoles 10:00 AM - 12:00 PM",
+  "Jueves 1:00 PM - 3:00 PM": "Jueves 1:00 AM - 3:00 PM",
+  "Viernes 4:00 PM - 6:00 PM": "Viernes 4:00 PM - 6:00 PM",
+  "Encuesta de Preferencias en Tecnología": "Encuesta de Preferencias en Tecnología",
+  "¿Qué tecnología te gustaría aprender en el futuro?": "¿Qué tecnología te gustaría aprender en el futuro?",
+  "¿Qué sistema operativo prefieres usar?": "¿Qué sistema operativo prefieres usar?",
+  "Windows": "Windows",
+  "Linux": "Linux",
+  "MacOS": "MacOS",
+  "¿Qué dispositivos usas regularmente? (Selecciona hasta 2 opciones)": "¿Qué dispositivos usas regularmente? (Selecciona hasta 2 opciones)",
+  "smartphone": "smartphone",
+  "laptop": "laptop",
+  "tablet": "tablet",
+  "smartwatch": "smartwatch",
+  "¿Cuántas horas a la semana dedicas a aprender sobre tecnología?": "¿Cuántas horas a la semana dedicas a aprender sobre tecnología?",
+  "6": "6",
+  "7": "7",
+  "8": "8",
+  "9": "9",
+  "10": "10",
+  "Encuesta de Preferencias de Cine": "Encuesta de Preferencias de Cine",
+  "¿Qué género de películas prefieres?": "¿Qué género de películas prefieres?",
+  "¿Cuál es tu película favorita?": "¿Cuál es tu película favorita?",
+  "Inception": "Inception",
+  "The Matrix": "The Matrix",
+  "Avengers": "Avengers",
+  "Titanic": "Titanic",
+  "¿Has visto alguna de las siguientes películas?": "¿Has visto alguna de las siguientes películas?",
+  "¿Con qué frecuencia ves películas?": "¿Con qué frecuencia ves películas?"
+}
