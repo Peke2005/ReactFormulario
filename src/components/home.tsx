@@ -6,7 +6,7 @@ function home() {
   const navigate = useNavigate();
 
   return (
-    <div className="p-6 text-center">
+    <div className="p-6 text-center mt-[50%]">
       <h1 className="text-2xl font-bold">{t("inicio.titulo")}</h1>
       <p className="mt-2">{t("inicio.descripcion")}</p>
       <button
