@@ -10,8 +10,12 @@
     "anterior": "Anterior",
     "siguiente": "Siguiente",
     "finalizar": "Finalizar"
-  }, "resumen": {
+  },
+  "resumen": {
     "titulo": "Resumen de Respuestas"
+  },
+  "footer": {
+    "nombre": "Stucom"
   },
   "Cuestionario de Datos del Usuario": "Cuestionario de Datos del Usuario",
   "¿Cuál es tu nombre?": "¿Cuál es tu nombre?",
@@ -41,7 +45,7 @@
   "Lunes 9:00 AM - 11:00 AM": "Lunes 9:00 AM - 11:00 AM",
   "Martes 3:00 PM - 5:00 PM": "Martes 3:00 PM - 5:00 PM",
   "Miércoles 10:00 AM - 12:00 PM": "Miércoles 10:00 AM - 12:00 PM",
-  "Jueves 1:00 PM - 3:00 PM": "Jueves 1:00 AM - 3:00 PM",
+  "Jueves 1:00 PM - 3:00 PM": "Jueves 1:00 PM - 3:00 PM",
   "Viernes 4:00 PM - 6:00 PM": "Viernes 4:00 PM - 6:00 PM",
   "Encuesta de Preferencias en Tecnología": "Encuesta de Preferencias en Tecnología",
   "¿Qué tecnología te gustaría aprender en el futuro?": "¿Qué tecnología te gustaría aprender en el futuro?",

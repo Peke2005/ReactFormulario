@@ -10,8 +10,12 @@
     "anterior": "Previous",
     "siguiente": "Next",
     "finalizar": "Finish"
-  }, "resumen": {
+  },
+  "resumen": {
     "titulo": "Summary of Responses"
+  },
+  "footer": {
+    "nombre": "Stucom"
   },
   "Cuestionario de Datos del Usuario": "User Data Questionnaire",
   "¿Cuál es tu nombre?": "What is your name?",

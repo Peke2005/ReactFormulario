@@ -8,7 +8,7 @@ function Resumen() {
   const respuestas = (location.state?.respuestas || {}) as Record<string, string>;
 
   return (
-    <div className="p-6 text-center">
+    <div className="p-6 text-center mt-[50%]">
       <h2 className="text-2xl font-bold">{t("resumen.titulo")}</h2>
       <div className="bg-gray-100 p-4 rounded mt-4 text-left">
         {Object.entries(respuestas).map(([pregunta, respuesta]) => (
