@@ -5,7 +5,7 @@ import Home from "./components/home"; // Componente de la página de inicio
 import Formulario from "./components/formularios"; // Componente de formularios
 import Resumen from "./components/resumen"; // Componente de resumen
 import "./i18n/i18n"; // Importa la configuración de internacionalización (i18n)
-import Footer from "./components/footer"; // Pie de página
+import Footer from "./components/Footer"; // Pie de página
 
 // Define el componente principal "App"
 function App() {
